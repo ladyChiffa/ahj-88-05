@@ -1,0 +1,21 @@
+.popover {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: whitesmoke;
+    border:1px solid rgb(126, 126, 126);
+    border-radius:5px;
+    padding:0;
+    margin:0;
+}
+.popover h3 {
+    background-color: rgb(194, 194, 194);
+    color:black;
+    margin:0;
+    padding:5px;
+    border-bottom:1px solid rgb(126, 126, 126);
+}
+.popover div {
+    margin:0;    
+    padding:5px;
+}

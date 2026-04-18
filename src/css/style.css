@@ -1,0 +1,11 @@
+body {
+    color: #999;
+}
+
+.form-widget{
+    display:flex;
+    justify-content: center;
+}
+.form-widget button {
+    text-align:center;
+}
