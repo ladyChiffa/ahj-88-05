@@ -7,7 +7,7 @@ describe('Inn form', () => {
 
     beforeAll( async () => {
         browser = await puppeteer.launch({ // конфигурация браузера
-            headless: false,
+            headless: true, // браузер без интерфейса
             slowMo: 100,
             devtools: true
         });
