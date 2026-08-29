@@ -9,7 +9,8 @@ describe('Inn form', () => {
         browser = await puppeteer.launch({ // конфигурация браузера
             headless: true, // браузер без интерфейса
             slowMo: 100,
-            devtools: true
+            devtools: true,
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
 
         page = await browser.newPage();
