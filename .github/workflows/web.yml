@@ -41,6 +41,14 @@ jobs:
           node-version: 22.14.0
           cache: 'yarn'
       - run: yarn
+      - name: Start server
+        run: |
+          npm start &
+          echo "Waiting for server to be ready..."
+          while ! nc -z localhost 8080; do
+            sleep 1
+          done
+          echo "Server is ready!"
       - run: yarn e2e
 
   build:
