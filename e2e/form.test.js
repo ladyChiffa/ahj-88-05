@@ -16,7 +16,7 @@ describe('Inn form', () => {
         page = await browser.newPage();
     });
 
-    test('form input should add .valid class if inn is correct', async () => {
+    test('button click should add .popover div element', async () => {
         await page.goto('http://localhost:8080');
 
         await page.waitForSelector('.form-widget button');
